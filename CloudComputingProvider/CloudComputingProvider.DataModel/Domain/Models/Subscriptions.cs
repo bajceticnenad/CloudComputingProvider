@@ -8,10 +8,10 @@ namespace CloudComputingProvider.DataModel.Domain.Models
         public CustomerAccounts CustomerAccount { get; set; }
 
         public int SoftwareId { get; set; }
-        
+
         [StringLength(250)]
         public string SoftwareName { get; set; }
-        
+
         public int Quantity { get; set; }
 
         public int StateId { get; set; }

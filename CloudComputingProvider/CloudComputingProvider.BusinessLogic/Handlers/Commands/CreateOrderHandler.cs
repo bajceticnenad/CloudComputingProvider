@@ -2,12 +2,11 @@
 using CloudComputingProvider.BusinessModel;
 using CloudComputingProvider.BusinessModel.Commands;
 using CloudComputingProvider.BusinessModel.ResponseModels;
+using CloudComputingProvider.Infrastructure.Interfaces.Repositories;
 using CloudComputingProvider.Services.Interfaces.APIs;
 using MediatR;
 using Microsoft.Extensions.Logging;
-using CloudComputingProvider.Infrastructure.Interfaces.Repositories;
 using DM = CloudComputingProvider.DataModel;
-using CloudComputingProvider.DataModel.Domain.Models;
 
 namespace CloudComputingProvider.BusinessLogic.Handlers.Commands
 {
@@ -22,7 +21,7 @@ namespace CloudComputingProvider.BusinessLogic.Handlers.Commands
         #endregion PrivateFields
 
         #region Constructor
-        public CreateOrderHandler(ILogger<CreateOrderHandler> logger, IMapper mapper, ICcpOrderService ccpOrderService, 
+        public CreateOrderHandler(ILogger<CreateOrderHandler> logger, IMapper mapper, ICcpOrderService ccpOrderService,
             ISubscriptionsRepository subscriptionsRepository)
         {
             _logger = logger;

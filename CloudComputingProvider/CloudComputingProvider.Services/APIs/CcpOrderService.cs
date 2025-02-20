@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using CloudComputingProvider.DataModel;
-using CloudComputingProvider.DataModel.Domain.Models;
 using CloudComputingProvider.DataModel.Order;
 using CloudComputingProvider.DataModel.Software;
 using CloudComputingProvider.Services.Interfaces.APIs;
@@ -8,7 +7,6 @@ using CloudComputingProvider.Services.Interfaces.Cache;
 using CloudComputingProvider.Services.Interfaces.Mock;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-using System.Collections.Generic;
 
 namespace CloudComputingProvider.Services.APIs
 {
@@ -24,7 +22,7 @@ namespace CloudComputingProvider.Services.APIs
         #endregion PrivateFields
 
         #region Constructor
-        public CcpOrderService(ILogger<CcpOrderService> logger, ICacheService cacheService, IConfiguration configuration, 
+        public CcpOrderService(ILogger<CcpOrderService> logger, ICacheService cacheService, IConfiguration configuration,
             IMockCcpApi mockCcpApi, IMapper mapper)
         {
             _logger = logger;
@@ -51,7 +49,7 @@ namespace CloudComputingProvider.Services.APIs
                 response.ResponseMessage = $"Currently, there are no available services for Customer Id = {customerId}";
                 return response;
             }
-            
+
             response.Data = _mapper.Map<List<SoftwareService>>(result);
 
             return response;

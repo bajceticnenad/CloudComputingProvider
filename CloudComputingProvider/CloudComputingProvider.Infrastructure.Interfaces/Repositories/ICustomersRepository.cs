@@ -1,5 +1,4 @@
-﻿using CloudComputingProvider.DataModel;
-using CloudComputingProvider.DataModel.Domain.Models;
+﻿using CloudComputingProvider.DataModel.Domain.Models;
 
 namespace CloudComputingProvider.Infrastructure.Interfaces.Repositories
 {

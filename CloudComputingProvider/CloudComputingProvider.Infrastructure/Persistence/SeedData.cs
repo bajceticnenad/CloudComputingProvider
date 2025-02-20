@@ -2,7 +2,6 @@
 using CloudComputingProvider.Infrastructure.Interfaces.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using System.Data;
 
 namespace CloudComputingProvider.Infrastructure.Persistence
 {

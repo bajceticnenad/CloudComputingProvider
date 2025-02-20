@@ -85,11 +85,11 @@ namespace CloudComputingProvider.Infrastructure.Repositories
             return result;
         }
 
-        public async Task<int> RemoveSubscriptionLicences(int subscriptionId, int quantuty, 
+        public async Task<int> RemoveSubscriptionLicences(int subscriptionId, int quantuty,
             IEnumerable<SubscriptionDetails> subscriptionDetails, CancellationToken cancellationToken)
         {
             var subscription = await _cloudComputingProviderDBContext.Subscriptions
-                .Include(s => s.SubscriptionDetails)               
+                .Include(s => s.SubscriptionDetails)
                 .FirstAsync(x => x.Id == subscriptionId);
 
             subscription.Quantity = quantuty;

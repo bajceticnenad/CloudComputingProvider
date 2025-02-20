@@ -2,11 +2,6 @@
 using CloudComputingProvider.DataModel.Order;
 using CloudComputingProvider.DataModel.Software;
 using Refit;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CloudComputingProvider.Services.Interfaces.Mock
 {

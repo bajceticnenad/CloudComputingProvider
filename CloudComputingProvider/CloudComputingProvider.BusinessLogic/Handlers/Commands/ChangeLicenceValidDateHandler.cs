@@ -20,7 +20,7 @@ namespace CloudComputingProvider.BusinessLogic.Handlers.Commands
         #endregion PrivateFields
 
         #region Constructor
-        public ChangeLicenceValidDateHandler(ILogger<ChangeLicenceValidDateHandler> logger, IMapper mapper, 
+        public ChangeLicenceValidDateHandler(ILogger<ChangeLicenceValidDateHandler> logger, IMapper mapper,
             ISubscriptionsRepository subscriptionsRepository, ICcpOrderService ccpOrderService)
         {
             _logger = logger;

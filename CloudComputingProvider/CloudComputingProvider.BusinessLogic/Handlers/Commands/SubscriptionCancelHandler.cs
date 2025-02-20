@@ -21,7 +21,7 @@ namespace CloudComputingProvider.BusinessLogic.Handlers.Commands
         #endregion PrivateFields
 
         #region Constructor
-        public SubscriptionCancelHandler(ILogger<SubscriptionCancelHandler> logger, IMapper mapper, ISubscriptionsRepository subscriptionsRepository, 
+        public SubscriptionCancelHandler(ILogger<SubscriptionCancelHandler> logger, IMapper mapper, ISubscriptionsRepository subscriptionsRepository,
             ICcpOrderService ccpOrderService)
         {
             _logger = logger;

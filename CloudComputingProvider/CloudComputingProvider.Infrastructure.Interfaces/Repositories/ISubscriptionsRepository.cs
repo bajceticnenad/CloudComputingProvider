@@ -1,6 +1,4 @@
-﻿using CloudComputingProvider.DataModel;
-using CloudComputingProvider.DataModel.Domain.Models;
-using System.Threading;
+﻿using CloudComputingProvider.DataModel.Domain.Models;
 
 namespace CloudComputingProvider.Infrastructure.Interfaces.Repositories
 {
@@ -11,7 +9,7 @@ namespace CloudComputingProvider.Infrastructure.Interfaces.Repositories
         Task<int> ModifySubscriptionDetails(SubscriptionDetails newSubscriptionDetails, CancellationToken cancellationToken);
         Task<Subscriptions> GetSubscriptionById(int subscriptionId);
         Task<int> ModifySubscription(Subscriptions newSubscription, CancellationToken cancellationToken);
-        Task<int> RemoveSubscriptionLicences(int subscriptionId, int quantuty, IEnumerable<SubscriptionDetails> subscriptionDetails, 
+        Task<int> RemoveSubscriptionLicences(int subscriptionId, int quantuty, IEnumerable<SubscriptionDetails> subscriptionDetails,
             CancellationToken cancellationToken);
         Task<int> AddSubscriptionList(List<Subscriptions> subscriptions, CancellationToken cancellationToken);
 

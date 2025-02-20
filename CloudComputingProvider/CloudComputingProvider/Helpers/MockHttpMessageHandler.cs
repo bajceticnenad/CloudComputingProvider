@@ -1,8 +1,6 @@
 ﻿using CloudComputingProvider.DataModel;
 using CloudComputingProvider.DataModel.Order;
 using CloudComputingProvider.DataModel.Software;
-using System.ComponentModel;
-using System;
 using System.Net;
 using System.Text;
 using System.Text.Json;
@@ -113,7 +111,7 @@ namespace CloudComputingProvider.Helpers
                         CustomerAccountId = createOrderRequest.CustomerAccountId,
                         Price = 100,
                         Currency = "USD",
-                        DiscountPercentage = 10, 
+                        DiscountPercentage = 10,
                         Quantity = softwareService.Quantity,
                         Discount = 10,
                         TotalPrice = 90,
