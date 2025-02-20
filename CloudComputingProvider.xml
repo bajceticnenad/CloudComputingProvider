@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CloudComputingProvider</name>
+    </assembly>
+    <members>
+        <member name="T:CloudComputingProvider.Controllers.CustomerController">
+            <summary>
+            Customer Controller
+            </summary>
+        </member>
+        <member name="M:CloudComputingProvider.Controllers.CustomerController.#ctor(Microsoft.Extensions.Logging.ILogger{CloudComputingProvider.Controllers.CustomerController},MediatR.IMediator)">
+            <summary>
+            Customer Controller constructor
+            </summary>
+        </member>
+        <member name="M:CloudComputingProvider.Controllers.CustomerController.GetCustomerAccounts(System.Int32)">
+            <summary>
+            Return Accounts by Customer 
+            </summary>
+        </member>
+        <member name="T:CloudComputingProvider.Controllers.OrderController">
+            <summary>
+            Order Controller
+            </summary>
+        </member>
+        <member name="M:CloudComputingProvider.Controllers.OrderController.#ctor(Microsoft.Extensions.Logging.ILogger{CloudComputingProvider.Controllers.OrderController},MediatR.IMediator)">
+            <summary>
+            Order Controller constructor
+            </summary>
+        </member>
+        <member name="M:CloudComputingProvider.Controllers.OrderController.GetCustomerSoftwareServices(System.Int32)">
+            <summary>
+            Return list of software services available on CCP
+            </summary>
+        </member>
+        <member name="M:CloudComputingProvider.Controllers.OrderController.CreateOrder(CloudComputingProvider.BusinessModel.Commands.CreateOrderCommand)">
+            <summary>
+            Ordering software license
+            </summary>
+        </member>
+        <member name="T:CloudComputingProvider.Controllers.SubscriptionController">
+            <summary>
+            Subscription Controller
+            </summary>
+        </member>
+        <member name="M:CloudComputingProvider.Controllers.SubscriptionController.#ctor(Microsoft.Extensions.Logging.ILogger{CloudComputingProvider.Controllers.SubscriptionController},MediatR.IMediator)">
+            <summary>
+            Subscription Controller constructor
+            </summary>
+        </member>
+        <member name="M:CloudComputingProvider.Controllers.SubscriptionController.GetSubscriptions(System.Int32)">
+            <summary>
+            Return purchased software Licenses by Customer Account
+            </summary>
+        </member>
+        <member name="M:CloudComputingProvider.Controllers.SubscriptionController.ChangeLicenceValidDate(CloudComputingProvider.BusinessModel.Commands.ChangeLicenceValidDateCommand)">
+            <summary>
+            Extend the software license valid to date
+            </summary>
+        </member>
+        <member name="M:CloudComputingProvider.Controllers.SubscriptionController.Cancel(System.Int32)">
+            <summary>
+            Cancel the specific software under any account
+            </summary>
+        </member>
+        <member name="M:CloudComputingProvider.Controllers.SubscriptionController.ChangeLicencesQuantity(CloudComputingProvider.BusinessModel.Commands.ChangeLicencesQuantityCommand)">
+            <summary>
+            Change quantity of service licenses per subscription
+            </summary>
+        </member>
+    </members>
+</doc>

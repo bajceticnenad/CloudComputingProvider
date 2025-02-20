@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>d491efbe-7575-4124-b9a3-d3924ed75e27</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>E:\Projects\GIT\CloudComputingProvider\CloudComputingProvider.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="8.0.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Refit" Version="8.0.0" />
+    <PackageReference Include="Refit.HttpClientFactory" Version="8.0.0" />
+    <PackageReference Include="Serilog" Version="3.1.1" />
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.1" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="8.0.0" />
+    <PackageReference Include="Serilog.Formatting.Compact" Version="2.0.0" />
+    <PackageReference Include="Serilog.Sinks.Async" Version="1.5.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CloudComputingProvider.AutoMapper\CloudComputingProvider.AutoMapper.csproj" />
+    <ProjectReference Include="..\CloudComputingProvider.BusinessLogic.Interfaces\CloudComputingProvider.BusinessLogic.Interfaces.csproj" />
+    <ProjectReference Include="..\CloudComputingProvider.BusinessLogic\CloudComputingProvider.BusinessLogic.csproj" />
+    <ProjectReference Include="..\CloudComputingProvider.Infrastructure.Interfaces\CloudComputingProvider.Infrastructure.Interfaces.csproj" />
+    <ProjectReference Include="..\CloudComputingProvider.Infrastructure\CloudComputingProvider.Infrastructure.csproj" />
+    <ProjectReference Include="..\CloudComputingProvider.Services.Interfaces\CloudComputingProvider.Services.Interfaces.csproj" />
+    <ProjectReference Include="..\CloudComputingProvider.Services\CloudComputingProvider.Services.csproj" />
+  </ItemGroup>
+
+</Project>
